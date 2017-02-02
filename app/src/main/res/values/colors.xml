@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5959</color>
+    <color name="colorPrimaryDark">#c34040</color>
+    <color name="colorAccent">#FF5959</color>
+    <color name="pink">#FF5959</color>
+    <color name="heading">#ec474747</color>
+    <color name="statusbar">#c34040</color>
+
+    <color name="orange">@android:color/holo_orange_dark</color>
+</resources>

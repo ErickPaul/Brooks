@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:src="@drawable/leftarrow"
+            android:layout_marginRight="10dp" />
+
+        <views.textview.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Booking Settings"
+            android:id="@+id/title"
+            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#56bbbbbb">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center">
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/textviewtitle"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="22dp"
+                geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                android:src="@drawable/sg"
+                android:text="Who can book instantly"
+                android:textStyle="bold"
+                android:textColor="@color/heading" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="5dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="10dp"
+                    android:id="@+id/l1">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/guess"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Guests within my Mail Netwok"
+                        android:textColor="@color/heading"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/img"
+                        android:src="@drawable/tickred" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/heading"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="10dp"
+                    android:id="@+id/l2">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/only"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Only guests whom I&apos;ve contacted within the last 6 months."
+                        android:textColor="@color/heading"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/img2"
+                        android:src="@drawable/tickred"
+                        android:visibility="invisible" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/heading"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="10dp"
+                    android:id="@+id/l3">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/no"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="No one . I will read every request and approve within 24 hrs."
+                        android:textColor="@color/heading"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/img3"
+                        android:src="@drawable/tickred"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center">
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/df"
+                    android:gravity="left|center"
+                    android:textSize="12dp"
+                    geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                    android:src="@drawable/sg"
+                    android:text="If you let guests book instantly, they can book available days without requesting approval"
+                    android:textColor="@color/dim_foreground_disabled_material_light"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/img4"
+                    android:src="@drawable/idea"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/asas"
+                android:gravity="center"
+                android:textSize="18dp"
+                geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                android:src="@drawable/sg"
+                android:text="General requirements"
+                android:textStyle="bold"
+                android:textColor="@color/heading"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="70dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/keys"
+                    android:scaleType="centerCrop" />
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/flwng"
+                    android:gravity="left|center"
+                    android:textSize="16dp"
+                    geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                    android:src="@drawable/sg"
+                    android:text="General requirements of every guest include:"
+                    android:textColor="@color/heading"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imgh"
+                        android:src="@drawable/tickgreen"
+                        android:layout_marginLeft="10dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Agree to your house rules"
+                        android:textColor="@color/heading"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/sds"
+                        android:src="@drawable/tickgreen"
+                        android:layout_marginLeft="10dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wewew"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Profile photo"
+                        android:textColor="@color/heading"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/sdsdw"
+                        android:src="@drawable/tickgreen"
+                        android:layout_marginLeft="10dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eew"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Introductory message"
+                        android:textColor="@color/heading"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/dsds"
+                        android:src="@drawable/tickgreen"
+                        android:layout_marginLeft="10dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ewe"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Confirmed email and phone number"
+                        android:textColor="@color/heading"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/saew"
+                        android:src="@drawable/tickgreen"
+                        android:layout_marginLeft="10dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textwdw"
+                        android:gravity="left|center"
+                        android:textSize="18dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Payment Information"
+                        android:textColor="@color/heading"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/heading"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:padding="10dp"
+                    android:id="@+id/houserule">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/er"
+                        android:gravity="left|center"
+                        android:textSize="20dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="House rules"
+                        android:textColor="@color/heading"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/arrwgrey"
+                        android:src="@drawable/arrwgrey" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/call"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:background="@drawable/callusbg"
+            android:src="@drawable/tick"
+            android:padding="14dp" />
+
+    </FrameLayout>
+</LinearLayout>

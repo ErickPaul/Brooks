@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:src="@drawable/leftarrow"
+            android:layout_marginRight="10dp" />
+
+        <views.textview.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:id="@+id/title"
+            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#56bbbbbb">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="80dp"
+                android:gravity="top|center">
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/textviewtitle"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                    android:src="@drawable/sg"
+                    android:text="Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/heading" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:id="@+id/ltp"
+                        android:padding="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/titless"
+                            android:gravity="left|center"
+                            android:textSize="16dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="The Space"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/text_input_layoutas33"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/GreenTextInputLayout"
+                           >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/address1"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:singleLine="true"
+                                android:background="@null"
+                                android:textColorHint="#7a7979"
+                                android:textSize="16dp"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:hint="What makes your space unique?" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/heading"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:id="@+id/guestaccessll"
+                        android:padding="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sdds"
+                            android:gravity="left|center"
+                            android:textSize="16dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Guest Access"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/sdsdsds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/GreenTextInputLayout"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ed2"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:singleLine="true"
+                                android:background="@null"
+                                android:textColorHint="#7a7979"
+                                android:textSize="16dp"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:hint="What will guests have access to?" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/heading"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:id="@+id/interactionwithguestll"
+                        android:padding="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/title3"
+                            android:gravity="left|center"
+                            android:textSize="16dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Interaction With Guests"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/dses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/GreenTextInputLayout"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ed3"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:singleLine="true"
+                                android:background="@null"
+                                android:textColorHint="#7a7979"
+                                android:textSize="16dp"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:hint="How often do you interact with your guest?" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/erer"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                    android:src="@drawable/sg"
+                    android:text="The Neighbourhood"
+                    android:textStyle="bold"
+                    android:textColor="@color/heading" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:id="@+id/overvwll"
+                        android:padding="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ererr"
+                            android:gravity="left|center"
+                            android:textSize="16dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Overview"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ttttr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/GreenTextInputLayout"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ewrr"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:singleLine="true"
+                                android:background="@null"
+                                android:textColorHint="#7a7979"
+                                android:textSize="16dp"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:hint="What do you love about your neighbourhood?" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/heading"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:id="@+id/gettingaroundll"
+                        android:padding="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/fdfdfre"
+                            android:gravity="left|center"
+                            android:textSize="16dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Getting Around"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/sdserertdsds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/GreenTextInputLayout"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ed4"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:singleLine="true"
+                                android:background="@null"
+                                android:textColorHint="#7a7979"
+                                android:textSize="16dp"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:hint="Is there convenient transit?" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/trew"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                    android:src="@drawable/sg"
+                    android:text="Extra Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/heading" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:id="@+id/ottnll"
+                        android:padding="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ottnt"
+                            android:gravity="left|center"
+                            android:textSize="16dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Other Things To Note"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/wew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/GreenTextInputLayout"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/wewe"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:singleLine="true"
+                                android:background="@null"
+                                android:textColorHint="#7a7979"
+                                android:textSize="16dp"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:hint="Are there any details you'd like to share?" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/heading"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:id="@+id/houserulesll"
+                        android:padding="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hrt"
+                            android:gravity="left|center"
+                            android:textSize="16dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="House Rules"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/hrted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/GreenTextInputLayout"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ed6"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:singleLine="true"
+                                android:background="@null"
+                                android:textColorHint="#7a7979"
+                                android:textSize="16dp"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:hint="How do you expect your guests to behave?" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/call"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:background="@drawable/callusbg"
+        android:src="@drawable/tick"
+        android:padding="14dp" />
+
+    </FrameLayout>
+</LinearLayout>

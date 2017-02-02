@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Brook\'s Real Estate</string>
+    <string name="album_name">CameraSample</string>
+    <string name="demo_parallax_description">To rent your house</string>
+    <string name="demo_parallax_plus">+</string>
+    <string name="txtCredits"><a href="mailto:allanwanzalah@gmail.com?Subject=Interested%20In%20Property">E-mail Us</a></string>
+</resources>

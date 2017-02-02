@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cloudit.brooks.InnerActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView2"
+
+        android:divider="#000"
+        android:dividerHeight="0.5dp"
+        android:layout_gravity="center_horizontal|top" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center"
+            android:id="@+id/actionbar"
+            android:elevation="5dp">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:alpha="0.6"
+                ></LinearLayout>
+
+            <views.textview.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specific Room"
+                geekui:customTypeface="fonts/Ubuntu-R.ttf"
+
+                android:id="@+id/header"
+                android:layout_weight="1"
+                android:textSize="22dp"
+                android:layout_gravity="left|center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="70dp" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="70dp"
+                android:id="@+id/back22"
+                android:layout_height="match_parent"
+                android:gravity="left|center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/back222"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+        </FrameLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/llfordetails"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:id="@+id/llforopen"
+                android:layout_height="200dp"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:padding="2dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                >
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Room Name"
+                    android:id="@+id/subtitle"
+                    android:layout_marginTop="10dp"
+                    geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                    android:textColor="@color/heading"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp" />
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address details"
+                    android:id="@+id/sub"
+                    geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                    android:textColor="@color/heading"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp" />
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                <HorizontalScrollView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:scrollingCache="false"
+                    android:animationCache="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/all_amenties">
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+                <View
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_marginTop="10dp">
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hosted By :"
+                        android:id="@+id/sdd"
+                        geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                        android:textColor="@color/heading"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center|right" />
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Brooks"
+                        android:id="@+id/name"
+                        android:gravity="center|left"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:textColor="#0b707c"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="1dp"
+
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hidden within the Elementaita everglades, this cabin features a serene environment with close to nature setting ideal for weekend get aways for you and your loved ones.\nMake an appointment with Mr. Brooks via mail: "
+                    android:id="@+id/descp"
+                    geekui:customTypeface="fonts/Roboto-Light.ttf"
+                    android:textColor="@color/heading"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:autoLink="email"
+                    android:id="@+id/text2"
+                    android:textSize="15dp" />
+
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imageView4"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/g" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4 Guests"
+                            android:id="@+id/guest"
+                            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/dorimg"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/door" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3 Rooms"
+                            android:id="@+id/dor"
+                            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/bedimg"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/bed" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Double Bed"
+                            android:id="@+id/bed"
+                            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/bathimg"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/bath" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3 Baths"
+                            android:id="@+id/bath"
+                            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                <fragment
+                    android:tag="fragment_map"
+                    android:id="@+id/mapgh"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    class="views.WorkaroundMapFragment"/>
+
+                <!--<com.google.android.gms.maps.MapView-->
+                    <!--android:id="@+id/mapgh"-->
+                    <!--android:layout_width="match_parent"-->
+                     <!--/>-->
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="House Rules"
+                        android:id="@+id/hr"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:textColor="@color/heading"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+
+                        />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Read"
+                        android:id="@+id/save"
+                        android:gravity="center|right"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:textColor="#0b707c"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="1dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancellation Fees"
+                        android:id="@+id/cf"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:textColor="@color/heading"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+
+                        />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="See"
+                        android:id="@+id/save2"
+                        android:gravity="center|right"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:textColor="#0b707c"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="1dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terms &amp; Conditions"
+                        android:id="@+id/TermsandConditions"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:textColor="@color/heading"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+
+                        />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="See"
+                        android:id="@+id/save3"
+                        android:gravity="center|right"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:textColor="#0b707c"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="1dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="top|center"
+                        android:id="@+id/llfrom">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="From"
+                            android:id="@+id/fromdate"
+                            android:layout_marginTop="10dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="top|center" />
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please Select"
+                            android:id="@+id/datevalue"
+                            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="top|center" />
+                    </LinearLayout>
+                    <View android:layout_height="match_parent"
+                        android:layout_width="0.5dp"
+                        android:background="@color/heading"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/llto">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:id="@+id/todate"
+                            android:layout_marginTop="10dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="top|center" />
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please Select"
+                            android:id="@+id/tovalue"
+                            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                            android:textColor="@color/heading"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="top|center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/heading"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="50dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/close"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/closered"
+        android:visibility="gone" />
+
+    <views.textview.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Availibility"
+        android:id="@+id/ca"
+        android:gravity="center"
+        geekui:customTypeface="fonts/AllerDisplay.ttf"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@color/pink"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_gravity="bottom|center" />
+</FrameLayout>
+</FrameLayout>

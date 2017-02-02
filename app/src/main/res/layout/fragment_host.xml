@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <views.textview.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:id="@+id/title"
+        android:layout_marginTop="15dp"
+        geekui:customTypeface="fonts/Ubuntu-L.ttf"
+        android:textColor="@color/pink"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/sg"
+            android:scaleType="centerCrop" />
+
+        <views.textview.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What type of space do you want to sell or list?"
+            android:id="@+id/wdwd"
+            android:layout_marginTop="15dp"
+            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:id="@+id/llforhome">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/editimg"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/entirehome" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entire home"
+                android:id="@+id/edit"
+                geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                 />
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your entire home"
+                android:id="@+id/subt"
+                geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                android:textColor="@color/heading"
+                android:textSize="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:id="@+id/arrow"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/rightarrow" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bbbbbb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:id="@+id/llforprivate">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/prv"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/doorlocked" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Private room"
+                android:id="@+id/pr"
+                geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                />
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A single room in your home"
+                android:id="@+id/sfdf"
+                geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                android:textColor="@color/heading"
+                android:textSize="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/arrow2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/rightarrow" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bbbbbb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:id="@+id/llforshared">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/prv2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/doorlocked" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shared room"
+                android:id="@+id/sr"
+                geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                />
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bed, Couch and sofa, etc"
+                android:id="@+id/fgd"
+                geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                android:textColor="@color/heading"
+                android:textSize="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/arrow3"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/rightarrow" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bbbbbb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

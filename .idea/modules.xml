@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AirBnBClone.iml" filepath="$PROJECT_DIR$/AirBnBClone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PagerSlidingtabStrplibrary/PagerSlidingtabStrplibrary.iml" filepath="$PROJECT_DIR$/PagerSlidingtabStrplibrary/PagerSlidingtabStrplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animation/animation.iml" filepath="$PROJECT_DIR$/animation/animation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularimageview/circularimageview.iml" filepath="$PROJECT_DIR$/circularimageview/circularimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarypick/librarypick.iml" filepath="$PROJECT_DIR$/librarypick/librarypick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarysweet/librarysweet.iml" filepath="$PROJECT_DIR$/librarysweet/librarysweet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parallaxpagertransformer/parallaxpagertransformer.iml" filepath="$PROJECT_DIR$/parallaxpagertransformer/parallaxpagertransformer.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView5"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/dd"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView6"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d2"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView9"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d3"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView10"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d4"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView11"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d5"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView14"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d6"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView15"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d7"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView16"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d8"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView17"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/d9"
+        android:scaleType="centerCrop" />
+</LinearLayout>

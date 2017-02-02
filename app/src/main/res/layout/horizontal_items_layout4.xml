@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/product_image_in_hori"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/d7" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="#000"
+                android:alpha="0.8"
+                android:gravity="left|center">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <views.textview.TypefaceTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:textColor="#ffffff"
+                    geekui:customTypeface="fonts/Ubuntu-L.ttf"
+                    android:text="RENT: KES 6000 PER NIGHT"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/flash"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <views.textview.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eldoret Bungalows"
+            android:id="@+id/subtitle"
+            android:layout_marginTop="10dp"
+            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+            android:textColor="@color/heading"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp" />
+        <views.textview.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ideal property for couples who want to enjoy the Cabo Pulmo ambience Kericho has to offer."
+            android:id="@+id/sub"
+            geekui:customTypeface="fonts/Ubuntu-L.ttf"
+            android:textColor="@color/heading"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+        <com.pkmmte.view.CircularImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/lady2"
+            android:id="@+id/circleView"
+            app:civ_border="true"
+            app:civ_borderColor="@color/pink"
+            app:civ_borderWidth="2dp"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center|right" />
+
+    </LinearLayout>
+
+</LinearLayout>

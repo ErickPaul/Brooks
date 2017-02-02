@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.spinno.onetap.Profileactivity"
+        android:orientation="vertical">
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="2dp">
+            <FrameLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                    >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ea"
+                    android:id="@+id/ea"
+                    android:scaleType="centerCrop"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/back"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/leftarrow"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageView12"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_edit" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="#ffffff"
+                android:layout_marginBottom="5dp"></LinearLayout>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/camera"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_camera" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apporio Infolabs"
+                android:id="@+id/name"
+                geekui:customTypeface="fonts/Roboto-Regular.ttf"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/heading"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"/>
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Member since August 2016"
+                android:id="@+id/letter"
+                geekui:customTypeface="fonts/Roboto-Light.ttf"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/heading"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/heading"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"/>
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verified ID"
+                android:id="@+id/eww"
+                geekui:customTypeface="fonts/Roboto-Light.ttf"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/llforconfirm"
+                android:gravity="left|center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmed"
+                        android:id="@+id/cnf"
+                        android:layout_weight="1"
+                        geekui:customTypeface="fonts/Roboto-Light.ttf"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email Address, Phone Number"
+                        android:id="@+id/eml"
+                        android:layout_weight="1"
+                        geekui:customTypeface="fonts/Roboto-Light.ttf"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:textColor="@color/grey"
+                        android:textSize="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/view"
+                    geekui:customTypeface="fonts/Roboto-Light.ttf"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textColor="@color/blue_btn_bg_color"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

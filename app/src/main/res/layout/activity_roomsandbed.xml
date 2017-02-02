@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:src="@drawable/leftarrow"
+            android:layout_marginRight="10dp" />
+
+        <views.textview.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rooms &amp; Beds"
+            android:id="@+id/title"
+            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout><![CDATA[
+
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:layout_marginTop="15dp"
+
+        android:textColor="#000000"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginBottom="5dp"
+        android:gravity="center" />
+    ]]>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="#56bbbbbb"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="top|center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frmlay"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:gravity="center|top"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Beds"
+                            android:id="@+id/beds"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#ffffff"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:padding="5dp"
+                                android:id="@+id/mins2"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/mins" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="1"
+                            android:id="@+id/res2"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_weight="1" />
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/add2"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/plus"
+                                android:padding="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:gravity="center|top"
+                        android:layout_height="wrap_content">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bedrooms"
+                            android:id="@+id/bdrms"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#ffffff"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:padding="5dp"
+                                android:id="@+id/mins3"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/mins" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="1"
+                            android:id="@+id/res3"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_weight="1" />
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/add3"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/plus"
+                                android:padding="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:gravity="center|top"
+                        android:layout_height="wrap_content">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bathrooms"
+                            android:id="@+id/bthrm"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#ffffff"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:padding="5dp"
+                                android:id="@+id/mins4"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/mins" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="1.0"
+                            android:id="@+id/res4"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" />
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/add4"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/plus"
+                                android:padding="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:gravity="center|top"
+                        android:layout_height="wrap_content">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Max Guests"
+                            android:id="@+id/max"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="#ffffff"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:padding="5dp"
+                                android:id="@+id/mins"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/mins" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="1"
+                            android:id="@+id/res"
+                            android:gravity="center"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:layout_weight="1" />
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/add"
+                                android:background="@drawable/bgforbutton"
+                                android:src="@drawable/plus"
+                                android:padding="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="80dp"
+                    android:elevation="5dp"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:id="@+id/ltp"
+                        android:layout_marginTop="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lt"
+                            android:gravity="left|center"
+                            android:textSize="18dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Listing Type"
+                            android:textColor="@color/heading"
+                            android:layout_weight="1" />
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ds"
+                            android:gravity="right|center"
+                            android:textSize="18dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Entire Place"
+                            android:textStyle="bold"
+                            android:textColor="@color/pink"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/heading"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:id="@+id/lc"
+                        android:layout_marginBottom="5dp">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/only"
+                            android:gravity="left|center"
+                            android:textSize="18dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Home Type"
+                            android:textColor="@color/heading"
+                            android:layout_weight="1" />
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ds2"
+                            android:gravity="right|center"
+                            android:textSize="18dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Flat"
+                            android:textStyle="bold"
+                            android:textColor="@color/pink"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/call"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:background="@drawable/callusbg"
+            android:src="@drawable/tick"
+            android:padding="14dp" />
+    </FrameLayout>
+
+</LinearLayout>

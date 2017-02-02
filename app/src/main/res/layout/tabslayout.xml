@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+
+
+    android:background="#ffffff">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/gallerylayout">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/gallery"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:id="@+id/gallerycolor"
+                android:background="@drawable/homepink"
+                android:focusableInTouchMode="true" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/gallery2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:id="@+id/gallerygrey"
+                android:background="@drawable/homegrey"
+                android:focusableInTouchMode="true" />
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#e67e22"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/newslayout">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/news"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/newscolor"
+                android:background="@drawable/searchpink" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/news2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/newsgrey"
+                android:background="@drawable/searchgrey" />
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#e67e22"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/calendarlayout">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/calendar"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/calendarcolor"
+                android:background="@drawable/hostpink" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/calendar2"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/calendargrey"
+                android:background="@drawable/hostgrey" />
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#e67e22"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/surveylayout">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/survey"
+            android:orientation="vertical"
+
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/surveycolor"
+                android:background="@drawable/trippink" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/survey2"
+            android:orientation="vertical"
+
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/surveygrey"
+                android:background="@drawable/tripgrey" />
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#e67e22"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/morelayout">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/more"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/morecolor"
+                android:background="@drawable/settingspink" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/more2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/moregrey"
+                android:background="@drawable/settingsgrey" />
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

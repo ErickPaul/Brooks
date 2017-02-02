@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:src="@drawable/leftarrow"
+            android:layout_marginRight="10dp" />
+
+        <views.textview.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Long Term Prices"
+            android:id="@+id/title"
+            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#56bbbbbb">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="top|center">
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/textviewtitle"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                    android:src="@drawable/sg"
+                    android:text="Long-Term Discounts"
+                    android:textStyle="bold"
+                    android:textColor="@color/heading" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:padding="15dp"
+                        android:id="@+id/daily">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/guess"
+                            android:gravity="left|center"
+                            android:textSize="20dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Weekly Discount"
+                            android:textColor="@color/heading"
+                            android:layout_weight="1"
+                            android:textStyle="bold" />
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dailytext"
+                            android:gravity="right|center"
+                            android:textSize="20dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="0%"
+                            android:textColor="@color/pink"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/heading"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="50dp">
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/df"
+                        android:gravity="left|center"
+                        android:textSize="20dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Tip : 21%"
+                        android:textColor="@color/success_stroke_color"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/img4"
+                        android:src="@drawable/idea"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:padding="15dp"
+                        android:id="@+id/monthly">
+                        <views.textview.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mn"
+                            android:gravity="left|center"
+                            android:textSize="20dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="Monthly Discount"
+                            android:textColor="@color/heading"
+                            android:layout_weight="1"
+                            android:textStyle="bold" />
+
+                        <views.textview.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/monthlytext"
+                            android:gravity="right|center"
+                            android:textSize="20dp"
+                            geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                            android:src="@drawable/sg"
+                            android:text="0%"
+                            android:textColor="@color/pink"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/heading"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dfdf"
+                        android:gravity="left|center"
+                        android:textSize="20dp"
+                        geekui:customTypeface="fonts/Ubuntu-R.ttf"
+                        android:src="@drawable/sg"
+                        android:text="Tip : 49%"
+                        android:textColor="@color/success_stroke_color"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/dfsd"
+                        android:src="@drawable/idea"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/call"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:background="@drawable/callusbg"
+        android:src="@drawable/tick"
+        android:padding="14dp" />
+
+    </FrameLayout>
+</LinearLayout>

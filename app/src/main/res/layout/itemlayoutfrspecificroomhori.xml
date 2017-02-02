@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:geekui="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingTop="2dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="2dp">
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/swimming"
+        android:id="@+id/circleView"
+        app:civ_border="true"
+        app:civ_borderColor="@color/pink"
+        app:civ_borderWidth="2dp"
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        android:layout_gravity="center" />
+    <views.textview.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pool"
+        android:id="@+id/sub"
+        android:gravity="center"
+        geekui:customTypeface="fonts/Ubuntu-L.ttf"
+        android:textColor="@color/heading"
+        android:textSize="18dp"
+
+        android:layout_weight="1"
+       />
+</LinearLayout>
