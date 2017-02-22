@@ -1,22 +1,25 @@
 package cloudit.brooks;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import com.astuetz.PagerSlidingTabStrip;
 
 import cloudit.brooks.Fragment_mainscreen.Homefragment;
 import cloudit.brooks.Fragment_mainscreen.Hostfragment;
 import cloudit.brooks.Fragment_mainscreen.Searchfragment;
 import cloudit.brooks.Fragment_mainscreen.Settingsfragment;
 import cloudit.brooks.Fragment_mainscreen.Tripsfragemnt;
-import com.astuetz.PagerSlidingTabStrip;
 
 public class MainActivity extends FragmentActivity {
    public static ViewPager pager;
@@ -63,6 +66,17 @@ public class MainActivity extends FragmentActivity {
         tabs.setIndicatorHeight(3);
         tabs.setIndicatorColor(Color.parseColor("#e67e22"));
         tabs.setViewPager(pager);
+
+        LinearLayout menu_photos = (LinearLayout )findViewById(R.id.linear);
+        menu_photos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent picture_intent = new Intent(MainActivity.this,InnerActivity2.class);
+
+                Toast.makeText(MainActivity.this, "opening region", Toast.LENGTH_LONG).show();
+                startActivity(picture_intent );
+            }
+        });
 
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,6 +180,7 @@ public class MainActivity extends FragmentActivity {
         moregrey.setVisibility(View.VISIBLE);
         layoutgrey.setVisibility(View.INVISIBLE);
     }
+
 
 
     class MyPagerAdapter extends FragmentStatePagerAdapter {

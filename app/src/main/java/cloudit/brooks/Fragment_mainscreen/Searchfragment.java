@@ -42,6 +42,7 @@ public class Searchfragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_search, container, false);
         lv1 = (ListView) v.findViewById(R.id.lvsearch);
         lv1.setAdapter(new ArrayAdapter(getActivity(),R.layout.itemlayoutforsearch,R.id.textv,abc));
+
         return v;
     }
 

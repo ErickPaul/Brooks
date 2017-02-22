@@ -25,7 +25,7 @@
         tools:replace="android:icon">
 
         <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
@@ -64,11 +64,15 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyCHoeS8DH3H-2mwUDV0nPPEgd8fnzHVC-I" />
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".InnerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".InnerActivity2"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
